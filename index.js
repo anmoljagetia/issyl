@@ -17,7 +17,8 @@ app = express();
 port = process.env.PORT || 5000;
 shortid = require('shortid');
 bodyParser = require('body-parser');
-base_url = process.env.BASE_URL || 'http://localhost:5000';
+// base_url = process.env.BASE_URL || 'http://localhost:5000';
+base_url = process.env.BASE_URL || 'issyl.ml';
 
 //creating a hack to make it work with heroku
 // var REDISTOGO_URL = "redis://redistogo:7390cc2a89199620768b6d66904f5d0f@scat.redistogo.com:10389";
