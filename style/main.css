@@ -1,0 +1,55 @@
+body {
+	background: #1784cd;
+	margin: 10px;
+	padding: 10px;
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+h1 {
+  line-height: 1.25;
+  font-weight: 400;
+  font-size: 3.5em;
+}
+
+.header {
+  margin-top: -7%;
+  background: #1784cd;
+  margin: 0 auto;
+  padding: 3em 1em;
+  text-align: center;
+  color: rgba(255,255,255,0.75);
+}
+
+input {
+	display: block;
+	margin: 0 auto;
+	/*margin: 0.3em 0 0 0;*/
+	padding: 0.5em 1em 0.5em 0.7em;
+	width: 60%;
+	border: none;
+	color: rgba(0,0,0,0.6);
+	font-size: 2em;
+  	font-family: inherit;
+	line-height: 1;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+label {
+  padding: 0.5em 1em 0.5em 0.7em;
+  display: block;
+  text-align: center;
+  line-height: 150%;
+  color: rgba(255,255,255,0.75);
+  font-size: 1.5em;
+  line-height: 1.25;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
