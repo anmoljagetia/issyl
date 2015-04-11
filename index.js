@@ -21,7 +21,7 @@ base_url = process.env.BASE_URL || 'http://localhost:5000';
 
 //creating a hack to make it work with heroku
 // var REDISTOGO_URL = "redis://redistogo:7390cc2a89199620768b6d66904f5d0f@scat.redistogo.com:10389";
-var REDISTOGO_URL = "redis://pub-redis-11415.us-east-1-2.2.ec2.garantiadata.com:11415";
+var REDISTOGO_URL = "redis://database:root@pub-redis-11415.us-east-1-2.2.ec2.garantiadata.com:11415";
 
 // Set up connection to Redis
 if (REDISTOGO_URL ) {
