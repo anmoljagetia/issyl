@@ -19,9 +19,12 @@ shortid = require('shortid');
 bodyParser = require('body-parser');
 base_url = process.env.BASE_URL || 'http://localhost:5000';
 
+//creating a hack to make it work with heroku
+var process.env.REDISTOGO_URL = "redis://pub-redis-11415.us-east-1-2.2.ec2.garantiadata.com:11415";
+
 // Set up connection to Redis
-if (process.env.REDISTOGO_URL) {
-  rtg  = require("url").parse(process.env.REDISTOGO_URL);
+if (process.env.REDISTOGO_URL ) {
+  rtg  = require("url").parse("redis://pub-redis-11415.us-east-1-2.2.ec2.garantiadata.com:11415");
   client = require("redis").createClient(rtg.port, rtg.hostname);
   client.auth(rtg.auth.split(":")[1]);
 } else {
