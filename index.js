@@ -87,6 +87,8 @@ app.route('/:id').all(function (req, res) {
 
 // Serve static files
 app.use(express.static(__dirname + '/static'));
+//Serve CSS files
+app.use(express.static(__dirname, '/css'));
 
 // Listen
 app.listen(port);
