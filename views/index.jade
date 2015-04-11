@@ -2,13 +2,13 @@ doctype html
 html(lang="en")
     head
         title="ISSYL"
+        link(href='../style/main.css', rel='stylesheet')
 
     body
         div.container
-            div.row
-                h1 Shortbread
+            div.header
+                h1 It's so short you'll LOL!
 
             div.row
                 form(action="/", method="POST")
                     input(type="url", name="url")
-                    input(type="submit", value="Submit")
